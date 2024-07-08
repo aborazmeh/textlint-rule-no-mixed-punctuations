@@ -26,10 +26,12 @@ textlint --rule no-mixed-punctuations --fix README.md
 
 Via `.textlintrc.json`(Recommended)
 
-```json
+```jsonc
 {
     "rules": {
-        "no-mixed-punctuations": true
+        "no-mixed-punctuations": {
+          "language": "english"  // choices: 'arabic', 'english
+        }
     }
 }
 ```
